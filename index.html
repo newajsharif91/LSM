@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <script src="https://kit.fontawesome.com/ac8ab01da1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
    
@@ -18,151 +19,194 @@
      <div class="root">
       <div class="">
          <!-- Navigation Bar Start -->
-    <nav class="navbar navbar-expand-lg bg-light py-4  text-center">
-      <div class="container">
-        <a class="navbar-brand" href="#">LSM UNIVERSITY</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">My course</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">All Courses</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>            
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Navigation Bar End -->
-  
-    <!-- Course Details Section  Start -->
-
-        <div class="course-layout py-3 py-md-5">
-          <div class="">
-            <div class="container">
-              <div class="row">               
-                <div class="col-lg-4 pr-lg-0 d-none d-lg-block">
-                  <div class="course-content-component">
-                    <div class="course-content-container">
-                     <div class="d-flex align-items-center justify-content-between">
-                      <h4 class="mt-4 mb-4 course-content-progress">Course Content</h4>
-                      <div class="lesson-search bg-while p-2 mb-3">
-                        <div class="course-content-list"></div>
-                      </div>
-                     </div> 
-                     <div class="lesson-search bg-white p-2 mb-3"><div class="rbt" tabindex="-1" style="outline: none; position: relative;"><div style="display: flex; flex: 1 1 0%; height: 100%; position: relative;"><input autocomplete="off" placeholder="Search Lesson" type="text" aria-autocomplete="both" aria-expanded="false" aria-haspopup="listbox" role="combobox" class="rbt-input-main form-control rbt-input" value=""><input aria-hidden="true" class="rbt-input-hint" readonly="" tabindex="-1" value="" style="background-color: transparent; border-color: transparent; box-shadow: none; color: rgba(0, 0, 0, 0.54); left: 0px; pointer-events: none; position: absolute; top: 0px; width: 100%; border-style: none; border-width: 0px; font-size: 15px; height: 46px; line-height: 22.5px; margin: 0px; padding: 23px 20px 23px 35px;"></div></div></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Course Details Section End-->
-
-              <!-- Video Section Side Start -->
-
-                <div class="col-lg-8 pr-lg-4 bg-light">
-                  <h4 class="course-name">Complete E-learning Course With LSM Team</h4>
-                  <div class="d-flex justify-content-evenly border ">
-
-                     <!--Offcanvas Start-->
-
-                    <div class="p-2 d-block d-lg-none"><a href="">  <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">  <span><i class="fa-solid fa-arrow-right"></i></span> Course Content</a>
-    
-                      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                        <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Course Content</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                          <p>Text Here What You Need </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                <!-- Offcanvas End-->
-
-                    <div class="p-2"><a class="text-decoration-none text-black" href=""> <span><i class="fa-solid fa-arrow-up-right-dots"></i></span> Course Overview</a></div>
+         <nav class="navbar navbar-expand-lg  text-center">
+          <div class="container">
+            <a class="navbar-brand " href="#">LSM UNIVERSITY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">My course</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                  </a>
                     
-
-                    <div class="p-2"><a class="text-decoration-none text-black" href=""> <span><i class="fa-solid fa-clone"></i></span> View Discussion</a></div>
-
-                  </div>
-
-                  <div class="mt-md-2">
-                    <div class="module-detail-component">
-                      <div class="mb-0">
-                        <div>
-                          <!-- Video Start -->
-                          <div style="width: 100%; border: none; max-width:100%;  z-index: 0; position:relative; height: 473px;" class="container-second bg-secondary" tabindex="-1">
-                          <div class="html5-video-player ytp-hide-info-bar iv-module-loaded paused-mode">
-                            <iframe  src="video/The Score - In My Blood (Official Visualizer).mp4" style="width: 100%; border: none; max-width:100%;  z-index: 0; position:relative; height: 473px;" frameborder="0"></iframe>
-                          <!-- Video End -->
-                          </div>                                             
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                              <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <span class="input-group-text" id="basic-addon2"><button class="btn btn-dark">Search</button></span>
                           </div>
                         </div>
                       </div>
-                      <div class="course-summary-component mt-3 mb-3">
-                        <div class="clearfix">
-                            <h4>Chapter-1:Learn Form Newaj Sharif</h4>                         
+                    </div>   
+                </li>   
+          </div>
+          <div class="nav-item dropdown border rounded-pill">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="modal" data-bs-target="#userIdModal" aria-expanded="false">
+                <span>User Id</span>
+              </a>
+          </div>
+        </nav>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="userIdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    <hr class="m-1">
+    <!-- Navigation Bar End -->
+
+        <div class="course-layout">          
+              <div class="row">  
+                <!--  Course Content Start-->
+                <div class="col-lg-4 pr-lg-0 d-none d-lg-block">
+                  <div class="course-content-component ">
+                    <div class="course-content-container">
+                     <div class="d-flex align-items-center justify-content-between">
+                      
+                      <nav class="navbar navbar-expand-lg ">
+                        <div class="container-md">
+                          <a class="navbar-brand" href="#">My Courses</a>
                         </div>
-                      </div>
-                      <section>
-                       
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Lecture Notes
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
-          <div class="accordion-body">
-            <strong>Optional reading:</strong> 
-            <ol>
-              <li><a class="text-decoration-none" href="https://www.mongodb.com/json-and-bson">JSON VS BS0N</a></li>
-              <li><a href=""></a></li>
-              
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Download Course Meterials
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> 
-          </div>
-        </div>
-      </div>
-    </div>
-                      </section>
+                      </nav>                   
+                     </div> 
+                     <div class="d-flex">
+                      <ul class="p-2" style="list-style: none;">
+                      <li class="text-success">Course 
+                        Ends:
+                      </li>
+                      <li>59d:07hr:30m</li>
+                      <li>Nov 08,17:00 UTC</li>
+                    </ul>
+                      <ul class="p-2" style="list-style: none;">
+                      <li>Chapter Labs Due:</li>
+                      <li>59d:07hr:28m</li>
+                      <li>Nov 08,17:00 UTC</li>
+                    </ul>
+                    </div>
 
+                    <div class="accordion m-2" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Chapter-1:Suvash Kmn aso?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                          <div class="accordion-body card">
+                         <a  class="text-decoration-none text-black" href="">Maf koira Den vhai </a>
+                          </div>
+                
+                
+                          <div class="accordion-body card">
+                          <a class="text-decoration-none text-black" href="">Maf koira Den vhai</a>
+                           </div>
+                
+                           <div class="accordion-body card">
+                           <a class="text-decoration-none text-black" href="">Maf koira Den vhai</a>
+                            </div>
+                
+                        </div>
+                          </div> 
+                        </div>
+                        <h4 class="m-2">Leassons</h4>
+                        <ul class="leasson-li">
+                        <li><a class="text-black text-decoration-none" href=""><i class="leasson-icon fa-solid fa-video"></i>Newaj</a></li>
+                      
+                        <li><a class="text-black text-decoration-none" href=""><i class="leasson-icon fa-solid fa-video"></i>Newaj</a></li>
 
+                      </ul>
+                      </div>   
                     </div>
                   </div>
-                </div>
+                  <!-- Course Content End -->
+                  <!-- Video Section Start -->
+                  <div class="col-lg-8 pr-lg-4">
+                    <div class="d-flex justify-content-start ">
+  
+                       <!--Offcanvas Start-->
+  
+                      <div class="p-2 d-block d-lg-none"><a href="">  <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">  <span><i class="fa-solid fa-arrow-right"></i></span>My Cources</a>
+      
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Course Content</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <p>Text Here What You Need </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+  
+                  <!-- Offcanvas End-->
+  
+                      <div class="p-2"><a class="text-decoration-none text-black" href=""> <span><i class="fa-solid fa-arrow-up-right-dots"></i></span> Course Overview</a></div>
+                      <div class="p-2"><a class="text-decoration-none text-black" href=""> <span><i class="fa-solid fa-clone"></i></span> View Discussion</a></div>
+                    </div>
+                      <div class="module-detail-component">
+                        <div class="m-3">
+                          <div>
+                            <!-- Video Start -->
+                            <div style="width: 100%; border: none; max-width:100%;  z-index: 0; position:relative; height: 473px;" class="container-second bg-secondary" tabindex="-1">
+                            <div class="html5-video-player ytp-hide-info-bar iv-module-loaded paused-mode">
+                              <iframe  src="video/The Score - In My Blood (Official Visualizer).mp" style="width: 100%; border: none; max-width:100%;  z-index: 0; position:relative; height: 473px;" frameborder="0"></iframe>
+                            <!-- Video End -->
+                            </div>                                           
+                          </div>
+                        </div>
+                        <div class="course-summary-component mt-3 mb-3">
+                          <div class="clearfix">
+                              <h4>Chapter-1:Learn Form Newaj Sharif</h4>                         
+                          </div>
+                        </div>
+                        <hr>
+                        <!-- Leacture Notes And Meterial Section End -->
+  
+  
+                        <div class="header d-flex">
+                          <div id="notes-div">
+                            <p id="notes-display">lecture Notes</p>
+                          </div>
+                          <div id="download-div">
+                            <p id="download">Download Course Materials</p>
+                          </div>
+                        </div>
+                        <div id="note-page">
+                          <h3>Notes Link </h3>
+                        </div>
+                        <div id="download-page">
+                          <h3>Material Drive Link</h3>
+                      </div>
+                      
+                        <!-- Leacture Notes And Meterial Section End  -->
+                        <button type="button" class="btn btn-success">Process To Next Section</button>
+  
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Video Section End -->
+                </div>            
               </div>
             </div>
           </div>
@@ -170,10 +214,8 @@
     </div>
   </div>
 
-<!-- Video Section Side End -->
-
     </header>
-
+<script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

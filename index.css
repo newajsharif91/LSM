@@ -1,0 +1,55 @@
+body{
+  font-family: Euclid Circular A,Akzidenz,Helvetica Neue,Helvetica,Arial,sans-serif;
+  letter-spacing: .3px;
+}
+
+.navbar li {
+        margin-left : 1rem;
+        margin-right : 1rem;
+}
+
+  #notes-display{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 20px;
+    
+  }
+  #notes-div{
+    border-bottom: 3px solid rgb(11, 80, 5);
+  }
+  #download{
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    padding: 0 20px;
+  }
+  #note-page, #download-page {
+    width: 100%%;
+    height: 200px;
+    border-top: 2px solid rgb(134, 150, 136);
+    
+  }
+  #download-page{
+   display: none;
+  }
+/* hover on Anchor tag Using Id */
+
+.accordion-body.card:hover{
+  background-color:blue;
+}
+.leasson-li{
+  border-left: 1px solid rgb(26, 31, 29);
+  font-weight: bold;
+  margin-left: 9px;
+  padding-left: 29px;
+  
+}
+.leasson-li>li{
+  font-size: 25px;
+  font-weight: 500;
+  list-style-type: none;
+}
+.leasson-li>li::before{
+  content: "";
+}
+
